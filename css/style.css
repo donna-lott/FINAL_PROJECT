@@ -1,25 +1,64 @@
-#map { height: 400px; width: 100%; }
-
-.tab-button {
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-right: 5px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* ===== GLOBAL STYLES ===== */
+body {
+  font-family: Arial, sans-serif; /* Change font here */
+  line-height: 1.6; /* Adjust line spacing */
+  margin: 20px; /* Adjust page margins */
+  color: #edd118; /* Default text color */
+  background-color: #8265e2; /* Default background color */
 }
 
-.tab-button.active {
-  background-color: #d0d0d0;
+/* ===== TABS ===== */
+.tab-button {
+  padding: 10px 20px; /* Button size */
+  background: #340e8b; /* Button color */
+  color: #edd118(241, 217, 6); /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Hand cursor on hover */
+  margin-right: 5px; /* Space between buttons */
+  font-size: 16px; /* Button text size */
+}
+
+.tab-button:hover {
+  background: #0056b3; /* Darker color on hover */
 }
 
 .tab-content {
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-top: 10px;
-  display: none;
+  padding: 20px; /* Space inside tab content */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  background: #f9f9f9; /* Light gray background */
+  margin-top: 10px; /* Space above content */
 }
 
-.tab-content.active {
-  display: block;
+/* ===== TRANSLATOR SECTION ===== */
+#name-input {
+  padding: 8px; /* Input field size */
+  width: 200px; /* Input field width */
+  margin-right: 10px; /* Space between input and button */
+}
+
+#translate-button {
+  padding: 8px 16px; /* Button size */
+  background: #a79a28; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#translated-name {
+  margin-top: 10px; /* Space above translated output */
+  font-size: 18px; /* Output text size */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+  .tab-button {
+    padding: 8px 16px; /* Smaller buttons on mobile */
+    font-size: 14px; /* Smaller text on mobile */
+  }
+  #name-input {
+    width: 150px; /* Narrower input on mobile */
+  }
 }
