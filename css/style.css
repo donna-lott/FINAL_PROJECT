@@ -10,8 +10,8 @@ body {
 /* ===== TABS ===== */
 .tab-button {
   padding: 10px 20px; /* Button size */
-  background: #340e8b; /* Button color */
-  color: #edd118(241, 217, 6); /* Button text color */
+  background: #1d035a; /* Button color */
+  color: #d7bb05(241, 217, 6); /* Button text color */
   border: none; /* Remove default border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Hand cursor on hover */
@@ -20,14 +20,14 @@ body {
 }
 
 .tab-button:hover {
-  background: #0056b3; /* Darker color on hover */
+  background: #5c00b3; /* Darker color on hover */
 }
 
 .tab-content {
   padding: 20px; /* Space inside tab content */
-  border: 1px solid #ddd; /* Light gray border */
+  border: 1px solid #b17be3; /* Light gray border */
   border-radius: 5px; /* Rounded corners */
-  background: #f9f9f9; /* Light gray background */
+  background: #664486; /* Light gray background */
   margin-top: 10px; /* Space above content */
 }
 
@@ -41,7 +41,7 @@ body {
 #translate-button {
   padding: 8px 16px; /* Button size */
   background: #a79a28; /* Green button */
-  color: white;
+  color: rgb(235, 162, 162);
   border: none;
   border-radius: 5px;
   cursor: pointer;
