@@ -6,12 +6,17 @@ body {
   color: #b69e03; /* Default text color */
   background-color: #150c34; /* Default background color */
 }
+.logo {
+  width: 200px;
+  height: auto;
+}
+
 
 /* ===== TABS ===== */
 .tab-button {
   padding: 10px 20px; /* Button size */
-  background: #c5b4ed; /* Button color */
-  color: #b69e03(241, 217, 6); /* Button text color */
+  background: #f1eede; /* Button color */
+  color: #1d1901(241, 217, 6); /* Button text color */
   border: none; /* Remove default border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Hand cursor on hover */
@@ -20,14 +25,14 @@ body {
 }
 
 .tab-button:hover {
-  background: #5c00b3; /* Darker color on hover */
+  background: #8f25f2; /* Darker color on hover */
 }
 
 .tab-content {
   padding: 20px; /* Space inside tab content */
   border: 1px solid #e37b7b; /* Light gray border */
   border-radius: 5px; /* Rounded corners */
-  background: #df0425; /* Light gray background */
+  background: #f1eede; /* Light gray background */
   margin-top: 10px; /* Space above content */
 }
 
@@ -40,8 +45,8 @@ body {
 
 #translate-button {
   padding: 8px 16px; /* Button size */
-  background: #28a744; /* Green button */
-  color: rgb(222, 6, 186);
+  background: #024c12; /* Green button */
+  color: #f1eede(116, 132, 27);
   border: none;
   border-radius: 5px;
   cursor: pointer;
