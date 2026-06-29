@@ -7,7 +7,7 @@ body {
   background-color: #150c34; /* Default background color */
 }
 .logo {
-  width: 200px;
+  width: 300px;
   height: auto;
   transition: filter 0.3s ease; /* Optional: Makes the color change smooth */
 }
