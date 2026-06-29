@@ -3,15 +3,15 @@ body {
   font-family: Arial, sans-serif; /* Change font here */
   line-height: 1.6; /* Adjust line spacing */
   margin: 20px; /* Adjust page margins */
-  color: #edd118; /* Default text color */
-  background-color: #8265e2; /* Default background color */
+  color: #b69e03; /* Default text color */
+  background-color: #150c34; /* Default background color */
 }
 
 /* ===== TABS ===== */
 .tab-button {
   padding: 10px 20px; /* Button size */
-  background: #1d035a; /* Button color */
-  color: #d7bb05(241, 217, 6); /* Button text color */
+  background: #c5b4ed; /* Button color */
+  color: #b69e03(241, 217, 6); /* Button text color */
   border: none; /* Remove default border */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Hand cursor on hover */
@@ -25,9 +25,9 @@ body {
 
 .tab-content {
   padding: 20px; /* Space inside tab content */
-  border: 1px solid #b17be3; /* Light gray border */
+  border: 1px solid #e37b7b; /* Light gray border */
   border-radius: 5px; /* Rounded corners */
-  background: #664486; /* Light gray background */
+  background: #df0425; /* Light gray background */
   margin-top: 10px; /* Space above content */
 }
 
@@ -40,8 +40,8 @@ body {
 
 #translate-button {
   padding: 8px 16px; /* Button size */
-  background: #a79a28; /* Green button */
-  color: rgb(235, 162, 162);
+  background: #28a744; /* Green button */
+  color: rgb(222, 6, 186);
   border: none;
   border-radius: 5px;
   cursor: pointer;
