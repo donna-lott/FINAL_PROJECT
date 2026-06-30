@@ -12,10 +12,6 @@ body {
   transition: filter 0.3s ease; /* Optional: Makes the color change smooth */
 }
 
-/* Add this new class right below it */
-.logo-white {
-  filter: invert(100%);
-}
 
 body {
   background-image: url('../assets/background.jpg');

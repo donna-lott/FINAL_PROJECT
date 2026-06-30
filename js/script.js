@@ -10,5 +10,3 @@ function openTab(tabName) {
   document.getElementById(tabName).style.display = 'block';
   event.target.classList.add('active');
 }
-// This tells JavaScript to add/remove the 'logo-white' class when needed
-document.querySelector('.logo').classList.toggle('logo-white');
