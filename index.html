@@ -104,27 +104,50 @@ So, my takeaway for everyone is this: with time and effort, you can achieve more
  <div id="script" class="tab-content">
     <p>In this section I want to showcase different visual elements and transformative aspects of the Georgian Language.</p>
 
-    <script>
-        // List of image paths
-        const imagePaths = [
-            'assets/alphabet.gif',
-            'assets/fonts.jpg',
-            'assets/fonts2.png',
-            'assets/kinto.jpg',
-            'assets/ligature.gif'
-        ];
+    <style>
+        /* Style for the image container */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
-        // Get the script div
-        const scriptDiv = document.getElementById('script');
+        /* Style for individual images */
+        .image-container img {
+            max-width: 300px;
+            max-height: 300px;
+            object-fit: contain;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 
-        // Loop through each image path and create an <img> element
-        imagePaths.forEach((path) => {
-            const img = document.createElement('img');
-            img.src = path;
-            img.alt = path.split('/').pop().split('.')[0]; // Use filename as alt text
-            scriptDiv.appendChild(img); // Append to the script div instead of document.body
-        });
-    </script>
+    <div class="image-container">
+        <script>
+            // List of image paths
+            const imagePaths = [
+                'assets/alphabet.gif',
+                'assets/fonts.jpg',
+                'assets/fonts2.png',
+                'assets/kinto.jpg',
+                'assets/ligature.gif'
+            ];
+
+            // Get the image container
+            const container = document.querySelector('.image-container');
+
+            // Loop through each image path and create an <img> element
+            imagePaths.forEach((path) => {
+                const img = document.createElement('img');
+                img.src = path;
+                img.alt = path.split('/').pop().split('.')[0]; // Use filename as alt text
+                container.appendChild(img);
+            });
+        </script>
+    </div>
 </div>
 
   <!-- Leaflet JS -->
