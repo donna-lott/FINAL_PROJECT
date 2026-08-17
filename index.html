@@ -101,40 +101,31 @@ So, my takeaway for everyone is this: with time and effort, you can achieve more
     </ul>
 </div>
 
-  <div id="script" class="tab-content">
-    
-  
-    <p1>In this section I want to showcase different visual elements and transformative aspect of Georgian Language.</p1>  
-      <script>
-    // Example for alphabet.gif
-    const img1 = document.createElement('img');
-    img1.src = 'assets/alphabet.gif';
-    img1.alt = 'Alphabet GIF';
-    document.body.appendChild(img1);
+ <div id="script" class="tab-content">
+    <p>In this section I want to showcase different visual elements and transformative aspects of the Georgian Language.</p>
 
-    // Example for fonts.jpg
-    const img2 = document.createElement('img');
-    img2.src = 'assets/fonts.jpg';
-    img2.alt = 'Fonts Image';
-    document.body.appendChild(img2);
+    <script>
+        // List of image paths
+        const imagePaths = [
+            'assets/alphabet.gif',
+            'assets/fonts.jpg',
+            'assets/fonts2.png',
+            'assets/kinto.jpg',
+            'assets/ligature.gif'
+        ];
 
-    const img3 = document.createElement('img');
-    img3.src = 'assets/fonts2.png';
-    img3.alt = 'Fonts Image';
-    document.body.appendChild(img3);
+        // Get the script div
+        const scriptDiv = document.getElementById('script');
 
-    const img4 = document.createElement('img');
-    img4.src = 'assets/kinto.jpg';
-    img4.alt = 'Kinto Image';
-    document.body.appendChild(img4);
-
-    const img5 = document.createElement('img');
-    img5.src = 'assets/ligature.gif';
-    img5.alt = 'Ligature GIF';
-    document.body.appendChild(img5);
-    // Repeat for other files as needed
-</script> 
-  </div>
+        // Loop through each image path and create an <img> element
+        imagePaths.forEach((path) => {
+            const img = document.createElement('img');
+            img.src = path;
+            img.alt = path.split('/').pop().split('.')[0]; // Use filename as alt text
+            scriptDiv.appendChild(img); // Append to the script div instead of document.body
+        });
+    </script>
+</div>
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
